@@ -1,0 +1,292 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/950bf08ffac6ba4ebc6841e4/w/cddffb1c4cad0e14901f474f/e/edd3973129191bc0148e83cd -->
+<mujoco model="Onshape-to-Robot">
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+  <default>
+    <default class="Onshape-to-Robot">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="50" dampratio="1"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  <worldbody>
+    <!-- Link centralunit -->
+    <body name="centralunit" pos="0 0 0" quat="1 0 0 0" childclass="Onshape-to-Robot">
+      <freejoint name="centralunit_freejoint"/>
+      <inertial pos="0.225025 1.72152e-06 0.00626835" mass="1.1839" fullinertia="0.0540892 0.0550373 0.108121 1.84738e-07 -0.00241187 4.236e-08"/>
+      <!-- Part tstab -->
+      <geom type="mesh" class="visual" pos="0.0497399 -5e-12 0.00215475" quat="1 -0 -0 0" mesh="tstab" material="tstab_material"/>
+      <geom type="mesh" class="collision" pos="0.0497399 -5e-12 0.00215475" quat="1 -0 -0 0" mesh="tstab" material="tstab_material"/>
+      <!-- Part rwinglet -->
+      <geom type="mesh" class="visual" pos="0.0346399 -0.001 0.00365475" quat="1 0 0 -0" mesh="rwinglet" material="rwinglet_material"/>
+      <geom type="mesh" class="collision" pos="0.0346399 -0.001 0.00365475" quat="1 0 0 -0" mesh="rwinglet" material="rwinglet_material"/>
+      <!-- Part lwinglet -->
+      <geom type="mesh" class="visual" pos="0.0346399 0.001 0.00365475" quat="1 0 0 -0" mesh="lwinglet" material="lwinglet_material"/>
+      <geom type="mesh" class="collision" pos="0.0346399 0.001 0.00365475" quat="1 0 0 -0" mesh="lwinglet" material="lwinglet_material"/>
+      <!-- Part ltube -->
+      <geom type="mesh" class="visual" pos="0.0831399 -5e-12 0.00465475" quat="1 0 -0 0" mesh="ltube" material="ltube_material"/>
+      <geom type="mesh" class="collision" pos="0.0831399 -5e-12 0.00465475" quat="1 0 -0 0" mesh="ltube" material="ltube_material"/>
+      <!-- Part rib_back -->
+      <geom type="mesh" class="visual" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 -0" mesh="rib_back" material="rib_back_material"/>
+      <geom type="mesh" class="collision" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 -0" mesh="rib_back" material="rib_back_material"/>
+      <!-- Part rtube -->
+      <geom type="mesh" class="visual" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 0" mesh="rtube" material="rtube_material"/>
+      <geom type="mesh" class="collision" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 0" mesh="rtube" material="rtube_material"/>
+      <!-- Part rwing -->
+      <geom type="mesh" class="visual" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 0" mesh="rwing" material="rwing_material"/>
+      <geom type="mesh" class="collision" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 0" mesh="rwing" material="rwing_material"/>
+      <!-- Part lwing -->
+      <geom type="mesh" class="visual" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 -0" mesh="lwing" material="lwing_material"/>
+      <geom type="mesh" class="collision" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 -0" mesh="lwing" material="lwing_material"/>
+      <!-- Part rib_front -->
+      <geom type="mesh" class="visual" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 0" mesh="rib_front" material="rib_front_material"/>
+      <geom type="mesh" class="collision" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 0" mesh="rib_front" material="rib_front_material"/>
+      <!-- Part rib_middle -->
+      <geom type="mesh" class="visual" pos="0.0831399 -0.0001 0.00465475" quat="1 0 0 0" mesh="rib_middle" material="rib_middle_material"/>
+      <geom type="mesh" class="collision" pos="0.0831399 -0.0001 0.00465475" quat="1 0 0 0" mesh="rib_middle" material="rib_middle_material"/>
+      <!-- Part nose -->
+      <geom type="mesh" class="visual" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 0" mesh="nose" material="nose_material"/>
+      <geom type="mesh" class="collision" pos="0.0831399 -5e-12 0.00465475" quat="1 0 0 0" mesh="nose" material="nose_material"/>
+      <!-- Part part_1 -->
+      <geom type="mesh" class="visual" pos="0.0526399 -5e-12 0.00440475" quat="0.707107 0 0 -0.707107" mesh="part_1" material="part_1_material"/>
+      <geom type="mesh" class="collision" pos="0.0526399 -5e-12 0.00440475" quat="0.707107 0 0 -0.707107" mesh="part_1" material="part_1_material"/>
+      <!-- Part part_2 -->
+      <geom type="mesh" class="visual" pos="0.0526399 -5e-12 -0.00359525" quat="0.707107 -0 -0 -0.707107" mesh="part_2" material="part_2_material"/>
+      <geom type="mesh" class="collision" pos="0.0526399 -5e-12 -0.00359525" quat="0.707107 -0 -0 -0.707107" mesh="part_2" material="part_2_material"/>
+      <!-- Part part_8 -->
+      <geom type="mesh" class="visual" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_8" material="part_8_material"/>
+      <geom type="mesh" class="collision" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_8" material="part_8_material"/>
+      <!-- Part part_5 -->
+      <geom type="mesh" class="visual" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_5" material="part_5_material"/>
+      <geom type="mesh" class="collision" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_5" material="part_5_material"/>
+      <!-- Part part_4 -->
+      <geom type="mesh" class="visual" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_4" material="part_4_material"/>
+      <geom type="mesh" class="collision" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_4" material="part_4_material"/>
+      <!-- Part part_1_2 -->
+      <geom type="mesh" class="visual" pos="0.0526399 -0.000185869 0.000590623" quat="0.707107 0 -0 0.707107" mesh="part_1__2" material="part_1__2_material"/>
+      <geom type="mesh" class="collision" pos="0.0526399 -0.000185869 0.000590623" quat="0.707107 0 -0 0.707107" mesh="part_1__2" material="part_1__2_material"/>
+      <!-- Part part_1_3 -->
+      <geom type="mesh" class="visual" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_1__3" material="part_1__3_material"/>
+      <geom type="mesh" class="collision" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_1__3" material="part_1__3_material"/>
+      <!-- Part part_1_4 -->
+      <geom type="mesh" class="visual" pos="0.0526399 -5e-12 -0.00359525" quat="0.707107 -0 -0 -0.707107" mesh="part_1" material="part_1_material"/>
+      <geom type="mesh" class="collision" pos="0.0526399 -5e-12 -0.00359525" quat="0.707107 -0 -0 -0.707107" mesh="part_1" material="part_1_material"/>
+      <!-- Part part_2_2 -->
+      <geom type="mesh" class="visual" pos="0.0526399 -5e-12 0.00440475" quat="0.707107 0 0 -0.707107" mesh="part_2" material="part_2_material"/>
+      <geom type="mesh" class="collision" pos="0.0526399 -5e-12 0.00440475" quat="0.707107 0 0 -0.707107" mesh="part_2" material="part_2_material"/>
+      <!-- Part part_6 -->
+      <geom type="mesh" class="visual" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_6" material="part_6_material"/>
+      <geom type="mesh" class="collision" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_6" material="part_6_material"/>
+      <!-- Part part_1_5 -->
+      <geom type="mesh" class="visual" pos="0.0976399 0.006 -0.00359525" quat="0.5 -0.5 0.5 -0.5" mesh="part_1__4" material="part_1__4_material"/>
+      <geom type="mesh" class="collision" pos="0.0976399 0.006 -0.00359525" quat="0.5 -0.5 0.5 -0.5" mesh="part_1__4" material="part_1__4_material"/>
+      <!-- Part part_7 -->
+      <geom type="mesh" class="visual" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_7" material="part_7_material"/>
+      <geom type="mesh" class="collision" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_7" material="part_7_material"/>
+      <!-- Part part_3 -->
+      <geom type="mesh" class="visual" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_3" material="part_3_material"/>
+      <geom type="mesh" class="collision" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_3" material="part_3_material"/>
+      <!-- Part part_3_2 -->
+      <geom type="mesh" class="visual" pos="0.0976399 0.006 -0.00359525" quat="0.5 -0.5 0.5 -0.5" mesh="part_3__2" material="part_3__2_material"/>
+      <geom type="mesh" class="collision" pos="0.0976399 0.006 -0.00359525" quat="0.5 -0.5 0.5 -0.5" mesh="part_3__2" material="part_3__2_material"/>
+      <!-- Part body50 -->
+      <geom type="mesh" class="visual" pos="0.0420399 0.0101309 0.0111548" quat="0 -0 0.707107 0.707107" mesh="body50" material="body50_material"/>
+      <geom type="mesh" class="collision" pos="0.0420399 0.0101309 0.0111548" quat="0 -0 0.707107 0.707107" mesh="body50" material="body50_material"/>
+      <!-- Part part_2_3 -->
+      <geom type="mesh" class="visual" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_2__2" material="part_2__2_material"/>
+      <geom type="mesh" class="collision" pos="0.0996399 -0.00425 -0.00134525" quat="0.5 -0.5 0.5 0.5" mesh="part_2__2" material="part_2__2_material"/>
+      <!-- Part body45 -->
+      <geom type="mesh" class="visual" pos="0.0946399 -0.00893587 -0.00734525" quat="0 -0 0.707107 0.707107" mesh="body45" material="body45_material"/>
+      <geom type="mesh" class="collision" pos="0.0946399 -0.00893587 -0.00734525" quat="0 -0 0.707107 0.707107" mesh="body45" material="body45_material"/>
+      <!-- Part body_01 -->
+      <geom type="mesh" class="visual" pos="0.0691809 -5e-12 0.00516075" quat="0.707107 0 0 -0.707107" mesh="body_01" material="body_01_material"/>
+      <geom type="mesh" class="collision" pos="0.0691809 -5e-12 0.00516075" quat="0.707107 0 0 -0.707107" mesh="body_01" material="body_01_material"/>
+      <!-- Part part_2_4 -->
+      <geom type="mesh" class="visual" pos="0.0976399 0.006 -0.00359525" quat="0.5 -0.5 0.5 -0.5" mesh="part_2__3" material="part_2__3_material"/>
+      <geom type="mesh" class="collision" pos="0.0976399 0.006 -0.00359525" quat="0.5 -0.5 0.5 -0.5" mesh="part_2__3" material="part_2__3_material"/>
+      <!-- Part rib_front_2 -->
+      <geom type="mesh" class="visual" pos="0.59874 -0.0061 0.0255548" quat="1 0 0 -0" mesh="rib_front__2" material="rib_front__2_material"/>
+      <geom type="mesh" class="collision" pos="0.59874 -0.0061 0.0255548" quat="1 0 0 -0" mesh="rib_front__2" material="rib_front__2_material"/>
+      <!-- Part rib_main -->
+      <geom type="mesh" class="visual" pos="0.59874 -0.0061 0.0255548" quat="1 0 0 0" mesh="rib_main" material="rib_main_material"/>
+      <geom type="mesh" class="collision" pos="0.59874 -0.0061 0.0255548" quat="1 0 0 0" mesh="rib_main" material="rib_main_material"/>
+      <!-- Part top -->
+      <geom type="mesh" class="visual" pos="0.59884 -0.0061 0.0255548" quat="1 0 -0 0" mesh="top" material="top_material"/>
+      <geom type="mesh" class="collision" pos="0.59884 -0.0061 0.0255548" quat="1 0 -0 0" mesh="top" material="top_material"/>
+      <!-- Part servo_cage -->
+      <geom type="mesh" class="visual" pos="0.59874 -0.0061 0.0255548" quat="1 0 -0 -0" mesh="servo_cage" material="servo_cage_material"/>
+      <geom type="mesh" class="collision" pos="0.59874 -0.0061 0.0255548" quat="1 0 -0 -0" mesh="servo_cage" material="servo_cage_material"/>
+      <!-- Part cylindre -->
+      <geom type="mesh" class="visual" pos="0.60384 0.005 0.00115475" quat="0.5 -0.5 0.5 -0.5" mesh="cylindre" material="cylindre_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 0.005 0.00115475" quat="0.5 -0.5 0.5 -0.5" mesh="cylindre" material="cylindre_material"/>
+      <!-- Part tube002 -->
+      <geom type="mesh" class="visual" pos="0.60384 0.005 -9.52464e-05" quat="0.5 -0.5 0.5 -0.5" mesh="tube002" material="tube002_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 0.005 -9.52464e-05" quat="0.5 -0.5 0.5 -0.5" mesh="tube002" material="tube002_material"/>
+      <!-- Part tube001 -->
+      <geom type="mesh" class="visual" pos="0.60384 0.005 0.00240475" quat="0.5 -0.5 0.5 -0.5" mesh="tube001" material="tube001_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 0.005 0.00240475" quat="0.5 -0.5 0.5 -0.5" mesh="tube001" material="tube001_material"/>
+      <!-- Part base001 -->
+      <geom type="mesh" class="visual" pos="0.59894 0.0183 0.00115475" quat="0.707107 -0.707107 -0 0" mesh="base001" material="base001_material"/>
+      <geom type="mesh" class="collision" pos="0.59894 0.0183 0.00115475" quat="0.707107 -0.707107 -0 0" mesh="base001" material="base001_material"/>
+      <!-- Part cylindre001 -->
+      <geom type="mesh" class="visual" pos="0.60384 0.005 -9.52464e-05" quat="0.5 -0.5 0.5 -0.5" mesh="cylindre001" material="cylindre001_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 0.005 -9.52464e-05" quat="0.5 -0.5 0.5 -0.5" mesh="cylindre001" material="cylindre001_material"/>
+      <!-- Part axe -->
+      <geom type="mesh" class="visual" pos="0.59894 0.0183085 0.00115475" quat="0.705666 -0.705666 -0.0451229 -0.0451229" mesh="axe" material="axe_material"/>
+      <geom type="mesh" class="collision" pos="0.59894 0.0183085 0.00115475" quat="0.705666 -0.705666 -0.0451229 -0.0451229" mesh="axe" material="axe_material"/>
+      <!-- Part tube -->
+      <geom type="mesh" class="visual" pos="0.60384 0.005 0.00115475" quat="0.5 -0.5 0.5 -0.5" mesh="tube" material="tube_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 0.005 0.00115475" quat="0.5 -0.5 0.5 -0.5" mesh="tube" material="tube_material"/>
+      <!-- Part cylindre002 -->
+      <geom type="mesh" class="visual" pos="0.60384 0.005 0.00240475" quat="0.5 -0.5 0.5 -0.5" mesh="cylindre002" material="cylindre002_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 0.005 0.00240475" quat="0.5 -0.5 0.5 -0.5" mesh="cylindre002" material="cylindre002_material"/>
+      <!-- Part cylindre_2 -->
+      <geom type="mesh" class="visual" pos="0.60384 -0.005 0.00115475" quat="0.5 0.5 0.5 0.5" mesh="cylindre" material="cylindre_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 -0.005 0.00115475" quat="0.5 0.5 0.5 0.5" mesh="cylindre" material="cylindre_material"/>
+      <!-- Part tube002_2 -->
+      <geom type="mesh" class="visual" pos="0.60384 -0.005 0.00240475" quat="0.5 0.5 0.5 0.5" mesh="tube002" material="tube002_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 -0.005 0.00240475" quat="0.5 0.5 0.5 0.5" mesh="tube002" material="tube002_material"/>
+      <!-- Part tube001_2 -->
+      <geom type="mesh" class="visual" pos="0.60384 -0.005 -9.52464e-05" quat="0.5 0.5 0.5 0.5" mesh="tube001" material="tube001_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 -0.005 -9.52464e-05" quat="0.5 0.5 0.5 0.5" mesh="tube001" material="tube001_material"/>
+      <!-- Part base001_2 -->
+      <geom type="mesh" class="visual" pos="0.59894 -0.0183 0.00115475" quat="0.707107 0.707107 -0 -0" mesh="base001" material="base001_material"/>
+      <geom type="mesh" class="collision" pos="0.59894 -0.0183 0.00115475" quat="0.707107 0.707107 -0 -0" mesh="base001" material="base001_material"/>
+      <!-- Part cylindre001_2 -->
+      <geom type="mesh" class="visual" pos="0.60384 -0.005 0.00240475" quat="0.5 0.5 0.5 0.5" mesh="cylindre001" material="cylindre001_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 -0.005 0.00240475" quat="0.5 0.5 0.5 0.5" mesh="cylindre001" material="cylindre001_material"/>
+      <!-- Part axe_2 -->
+      <geom type="mesh" class="visual" pos="0.59894 -0.0183085 0.00115475" quat="0.701388 0.701388 -0.0897474 0.0897474" mesh="axe" material="axe_material"/>
+      <geom type="mesh" class="collision" pos="0.59894 -0.0183085 0.00115475" quat="0.701388 0.701388 -0.0897474 0.0897474" mesh="axe" material="axe_material"/>
+      <!-- Part tube_2 -->
+      <geom type="mesh" class="visual" pos="0.60384 -0.005 0.00115475" quat="0.5 0.5 0.5 0.5" mesh="tube" material="tube_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 -0.005 0.00115475" quat="0.5 0.5 0.5 0.5" mesh="tube" material="tube_material"/>
+      <!-- Part cylindre002_2 -->
+      <geom type="mesh" class="visual" pos="0.60384 -0.005 -9.52464e-05" quat="0.5 0.5 0.5 0.5" mesh="cylindre002" material="cylindre002_material"/>
+      <geom type="mesh" class="collision" pos="0.60384 -0.005 -9.52464e-05" quat="0.5 0.5 0.5 0.5" mesh="cylindre002" material="cylindre002_material"/>
+      <!-- Link part_1 -->
+      <body name="part_1" pos="0.59894 -0.0295 0.00115475" quat="0.707042 -0.707042 -0.00958269 -0.00958269">
+        <!-- Joint from centralunit to part_1 -->
+        <joint axis="0 0 1" name="left_motor" type="hinge"/>
+        <inertial pos="0.0337913 -2e-12 -0.0784645" mass="0.0600079" fullinertia="0.000110697 0.000133328 2.28811e-05 0 5.68061e-07 0"/>
+        <!-- Part part_1_6 -->
+        <geom type="mesh" class="visual" pos="0 -0 -0.0048" quat="0.5 -0.5 -0.5 -0.5" mesh="part_1__5" material="part_1__5_material"/>
+        <geom type="mesh" class="collision" pos="0 -0 -0.0048" quat="0.5 -0.5 -0.5 -0.5" mesh="part_1__5" material="part_1__5_material"/>
+        <!-- Part lwinglet_rear -->
+        <geom type="mesh" class="visual" pos="-0.584444 -0.0025 0.0322" quat="0.707107 0.707107 -0 0" mesh="lwinglet_rear" material="lwinglet_rear_material"/>
+        <geom type="mesh" class="collision" pos="-0.584444 -0.0025 0.0322" quat="0.707107 0.707107 -0 0" mesh="lwinglet_rear" material="lwinglet_rear_material"/>
+      </body>
+      <!-- Link part_1_2 -->
+      <body name="part_1_2" pos="0.59894 0.0295 0.00115475" quat="0.705666 0.705666 -0.0451229 0.0451229">
+        <!-- Joint from centralunit to part_1_2 -->
+        <joint axis="0 0 1" name="right_motor" type="hinge"/>
+        <inertial pos="0.0337913 2e-12 -0.0784645" mass="0.0600079" fullinertia="0.000110697 0.000133328 2.28811e-05 0 5.68061e-07 0"/>
+        <!-- Part part_1_7 -->
+        <geom type="mesh" class="visual" pos="0 -0 -0.0048" quat="0.5 -0.5 -0.5 -0.5" mesh="part_1__5" material="part_1__5_material"/>
+        <geom type="mesh" class="collision" pos="0 -0 -0.0048" quat="0.5 -0.5 -0.5 -0.5" mesh="part_1__5" material="part_1__5_material"/>
+        <!-- Part rwinglet_rear -->
+        <geom type="mesh" class="visual" pos="-0.584444 0.0025 0.0322" quat="0.707107 -0.707107 -0 0" mesh="rwinglet_rear" material="rwinglet_rear_material"/>
+        <geom type="mesh" class="collision" pos="-0.584444 0.0025 0.0322" quat="0.707107 -0.707107 -0 0" mesh="rwinglet_rear" material="rwinglet_rear_material"/>
+      </body>
+    </body>
+  </worldbody>
+  <asset>
+    <mesh file="rtube.stl"/>
+    <mesh file="part_4.stl"/>
+    <mesh file="part_3__2.stl"/>
+    <mesh file="tstab.stl"/>
+    <mesh file="lwinglet.stl"/>
+    <mesh file="tube001.stl"/>
+    <mesh file="base001.stl"/>
+    <mesh file="rwing.stl"/>
+    <mesh file="part_5.stl"/>
+    <mesh file="part_6.stl"/>
+    <mesh file="part_2.stl"/>
+    <mesh file="body45.stl"/>
+    <mesh file="part_1__2.stl"/>
+    <mesh file="rib_back.stl"/>
+    <mesh file="rwinglet.stl"/>
+    <mesh file="part_8.stl"/>
+    <mesh file="rib_front.stl"/>
+    <mesh file="tube002.stl"/>
+    <mesh file="lwinglet_rear.stl"/>
+    <mesh file="nose.stl"/>
+    <mesh file="cylindre.stl"/>
+    <mesh file="rwinglet_rear.stl"/>
+    <mesh file="part_3.stl"/>
+    <mesh file="tube.stl"/>
+    <mesh file="lwing.stl"/>
+    <mesh file="part_7.stl"/>
+    <mesh file="cylindre001.stl"/>
+    <mesh file="part_1__3.stl"/>
+    <mesh file="body_01.stl"/>
+    <mesh file="part_2__3.stl"/>
+    <mesh file="servo_cage.stl"/>
+    <mesh file="top.stl"/>
+    <mesh file="part_2__2.stl"/>
+    <mesh file="body50.stl"/>
+    <mesh file="part_1.stl"/>
+    <mesh file="rib_main.stl"/>
+    <mesh file="part_1__5.stl"/>
+    <mesh file="rib_middle.stl"/>
+    <mesh file="axe.stl"/>
+    <mesh file="part_1__4.stl"/>
+    <mesh file="cylindre002.stl"/>
+    <mesh file="rib_front__2.stl"/>
+    <mesh file="ltube.stl"/>
+    <material name="tstab_material" rgba="0.984314 0.976471 0.976471 1"/>
+    <material name="rwinglet_material" rgba="0.984314 0.976471 0.976471 1"/>
+    <material name="lwinglet_material" rgba="0.984314 0.976471 0.976471 1"/>
+    <material name="ltube_material" rgba="0.0980392 0.0980392 0.0980392 1"/>
+    <material name="rib_back_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="rtube_material" rgba="0.0980392 0.0980392 0.0980392 1"/>
+    <material name="rwing_material" rgba="1 1 1 1"/>
+    <material name="lwing_material" rgba="1 1 1 1"/>
+    <material name="rib_front_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="rib_middle_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="nose_material" rgba="0.866667 0.321569 0.156863 1"/>
+    <material name="part_1_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="part_2_material" rgba="0.980392 0.713725 0.00392157 1"/>
+    <material name="part_8_material" rgba="0.933333 0.933333 0.933333 1"/>
+    <material name="part_5_material" rgba="0.835294 0.835294 0.835294 1"/>
+    <material name="part_4_material" rgba="0 0.647059 0.329412 1"/>
+    <material name="part_1__2_material" rgba="0.764706 0.545098 0.803922 1"/>
+    <material name="part_1__3_material" rgba="0.266667 0.262745 0.262745 1"/>
+    <material name="part_6_material" rgba="0.835294 0.835294 0.835294 1"/>
+    <material name="part_1__4_material" rgba="0.188235 0.188235 0.188235 1"/>
+    <material name="part_7_material" rgba="0.933333 0.933333 0.933333 1"/>
+    <material name="part_3_material" rgba="0.458824 0.105882 0 1"/>
+    <material name="part_3__2_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="body50_material" rgba="0.890196 0.568627 0.152941 1"/>
+    <material name="part_2__2_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="body45_material" rgba="0.0470588 0.309804 0.882353 1"/>
+    <material name="body_01_material" rgba="0.701961 0.701961 0.701961 1"/>
+    <material name="part_2__3_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="rib_front__2_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="rib_main_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="top_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="servo_cage_material" rgba="0.513725 0.415686 0.733333 1"/>
+    <material name="cylindre_material" rgba="0.780392 0.568627 0.113725 1"/>
+    <material name="tube002_material" rgba="1 1 0 1"/>
+    <material name="tube001_material" rgba="0.666667 0.333333 0 1"/>
+    <material name="base001_material" rgba="0.32549 0.305882 0.298039 1"/>
+    <material name="cylindre001_material" rgba="0.780392 0.568627 0.113725 1"/>
+    <material name="axe_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="tube_material" rgba="1 0 0 1"/>
+    <material name="cylindre002_material" rgba="0.780392 0.568627 0.113725 1"/>
+    <material name="part_1__5_material" rgba="0.298039 0.298039 0.298039 1"/>
+    <material name="lwinglet_rear_material" rgba="0.984314 0.976471 0.976471 1"/>
+    <material name="rwinglet_rear_material" rgba="0.984314 0.976471 0.976471 1"/>
+  </asset>
+  <actuator>
+    <position class="Onshape-to-Robot" name="left_motor" joint="left_motor"/>
+    <position class="Onshape-to-Robot" name="right_motor" joint="right_motor"/>
+  </actuator>
+  <equality/>
+</mujoco>
